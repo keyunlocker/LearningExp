@@ -12,6 +12,8 @@ package javalearning;
  * 3.Static Variable- which is same as the class variable or instance variable but it has the key word as static which give the fixed memory
  * location for all the instance got created for that class and we can access it through class name directly also and this varible are getting 
  * created at start of the program and destroy at the end of the program
+ * 
+ * 
  * @author key
  *
  */
@@ -38,3 +40,19 @@ public class LessonTwo {
 	 }
 	 
 }
+
+/*
+ * Output
+static variable
+One
+static variable change
+two
+static variable change
+three
+static variable change
+four
+static variable change
+five
+
+ * */
+
