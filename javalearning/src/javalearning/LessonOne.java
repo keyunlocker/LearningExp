@@ -8,7 +8,8 @@ package javalearning;
  *	it has 3 method valueOf(),Ordinal(),values()
  * 	it can have constructor and it will be called for each enum constant
  * 
- * StringBuffer.appendCodePoint()- it just append the argument which we pass as argument with it corresponding unicode
+ * StringBuffer.appendCodePoint()- it just append the argument which we pass as argument with it corresponding unicode.
+ * 
  * @author key
  *
  */
