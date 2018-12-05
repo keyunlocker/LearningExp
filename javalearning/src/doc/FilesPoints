@@ -1,0 +1,8 @@
+File in java
+-File class in java is a representation of file and directory
+-since in different environment there is different format of directory and file a simple
+ string name is not the replacement therefore this file class is introduced in java.
+-It has several method which helps to do so many operation to the file or to the directory such as renaming the file 
+ deleting the file ,listing the content of the folder or the directory.
+ -It is an abstract representation of file and directory.
+ -

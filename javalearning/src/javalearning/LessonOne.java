@@ -9,7 +9,7 @@ package javalearning;
  * 	it can have constructor and it will be called for each enum constant
  * 
  * StringBuffer.appendCodePoint()- it just append the argument which we pass as argument with it corresponding unicode.
- * 
+ * keyword and literal-keyword which define functionality where as literal define value like true ,false ,null 
  * @author key
  *
  */
@@ -29,19 +29,33 @@ public class LessonOne {
 	 * @author key
 	 *
 	 */
+	Bike bike;
 	enum Bike{
-		duke("KTM"),rc,ns,rs;
+		//duke is define with the single parameter constructor 
+		duke("KTM","ABS"),rc("Bajaj"),ns,rs;/*so this prove that we can have constructor define and each constant
+		is behaving as the class like Bike duke= new Duke("KTM","ABS") and so on*/ 
 		private String brand;
+		private String feature;
 		Bike(){
 			System.out.println("Constructor "+ this);
 			System.out.println("Constructor Name"+ this.toString());
 		}
+		
 		Bike(String brand){
 			this.brand=brand;
 			
 		}
+		
+		Bike(String brand,String feature){
+			this.brand=brand;
+			this.feature=feature;
+		}
 		public String getBrand() {
 			return this.brand;
+		}
+		
+		public String getFeature() {
+			return this.feature;
 		}
 	}
 	
@@ -53,21 +67,40 @@ public class LessonOne {
 		StringBuffer sb= new StringBuffer(b.getBrand());
 		sb.appendCodePoint(65);//the value you pass that it refer to the unicode point
 		System.out.println(sb);//expected result will be KTMA in this A got appended at the end
+		LessonOne lessonOne= new LessonOne();
+		lessonOne.bike=Bike.valueOf("rc");
+		lessonOne.emplementSwitchForTheEnum();
+		
+		
+		
+	}
+	
+	public void emplementSwitchForTheEnum() {
+		switch(bike) {
+		case duke:System.out.println("duke");
+		System.out.println(bike.getBrand()+"  "+ bike.getFeature());
+		break;
+		case rc:System.out.println("RC");
+		break;
+		default :System.out.println("demo of switch with the enum");
+		break;
+		}
 	}
 	
 
 }
 
-enum Car{
+enum Cars{
+//private String b;// compile time error as first line of the enum should be always constant
 	swift,alto,sumo,nano,bently;
-	
+	private String v;//we can define variable in the enum,method and constructor
 	public static void main(String args[]) {
-		Car c=Car.alto;
-		Car car[]=Car.values();
-		for(Car cr:car) {
+		Cars c=Cars.alto;
+		Cars car[]=Cars.values();
+		for(Cars cr:car) {
 			System.out.println(cr+" index "+ cr.ordinal());			
 		}
-		System.out.println(Car.valueOf("nano"));
+		System.out.println(Cars.valueOf("nano"));//valueOf return the enum constant for the string 
 		System.out.println(c);
 	}
 }

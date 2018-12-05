@@ -2,7 +2,7 @@ package javalearning;
 
 /**
  * This is the example of the oops which are 
- * 1.class
+ * 1.class- it is a prototype from which the object is created 
  * 
  * 2.object- insatnce of the  class
  * 
@@ -18,7 +18,7 @@ package javalearning;
  * 
  * 5.Abstraction-only essential details are displayed to user
  * famous example hai gisma we drive car but we don't know what all are the component which is responsible for the car to move.
- * java main abstraction 2 ways sa achiev kar sakta hai
+ * java mai abstraction 2 ways sa achiev kar sakta hai
  * abstration is implementation hiding
  * 				1.interface -
  * 1.it can have abstract method as well as the default method and static method 

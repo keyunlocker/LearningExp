@@ -1,0 +1,51 @@
+-Java io package has so many class to fulfill what we need to do with the file or need
+ to perform input and output.
+-It support many data such as primitives , object , localized character etc
+
+- Now the question is what is stream?
+ >so stream is sequence of data .
+ >then there are two type of stream they are InputStream  and OutputStream.
+ >Inputstream-it is used to read data from a source.
+ >outputStream-it is used to write data to the destination.
+
+-Type of Stream
+ Byte Streams:-
+ >java byte stream are used to perform input and output of 8-bit byte.
+ >important one are FileInputStream and FileOutputStream
+ 
+ Character Streams:-
+ >java character stream are used to perform input and output for 16-bite
+  unicode.
+ >important one are FileReader and FileWriter
+ >internally it used the FileInputStream and FileOutputStream but major
+  difference that they read and write 2 byte at a time.
+ 
+ Standard Stream 
+ >Standard Input -keyboard typing, is represented by System.in
+ >Standard Output - this is to output the data to the computer screen represented as System.out
+ >Standard Error- this is to output the error data produced by the user program to the computer screen,represented as
+ System.err
+ >for reading the standard input stream we use InputStreamReader constructor passing the System.in
+ 
+-Object
+	-InputStream
+		>FileInputStream
+		>ByteArrayInputStream-allow buffer in the memory to be used as input stream
+		>FilterInputStream
+			-BufferedInputStream
+			-DataInputStream
+		>ObjectInputStream
+	-OutputStream
+		>FileOutputStream-will create a file if it is not present before opening it for the output
+		>ByteArrayOutputStream-create a buffer in the memory all the data in the stream is stored in buffer.
+		>FilterOutputStream
+			-BufferedOutputStream
+			-DataOutputStream
+		>ObjectOutputStream 
+ 
+-
+
+
+
+
+  
