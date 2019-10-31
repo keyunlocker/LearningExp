@@ -1,0 +1,2 @@
+#!/bin/bash
+cat /e/workspace/envspringapp/dev/dep.yaml | sed "s/{{Version}}/$Version/g;s/{{Image}}/$Image/g" | kubectl apply -f -

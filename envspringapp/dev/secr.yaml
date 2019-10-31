@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: envspringapp-secr
+type: Opaque
+data:
+  ani: YW5pbWVzaG1yaW5hbA==

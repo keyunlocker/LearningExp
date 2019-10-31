@@ -2,7 +2,6 @@ package javalearning;
 
 public class Movie {
 
-	
 	private String name;
 	private double rating;
 	private int year;

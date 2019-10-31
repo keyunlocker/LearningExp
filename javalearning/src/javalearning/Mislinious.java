@@ -5,6 +5,7 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
@@ -58,8 +59,8 @@ public class Mislinious {
 		
 		//Static block and block start
 		
-		BlockOfCode.checkStaticBlock();
-		System.out.println("static block J  "+ BlockOfCode.j);
+		/*BlockOfCode.checkStaticBlock();
+		System.out.println("static block J  "+ BlockOfCode.j);*/
 		
 		BlockOfCode sb1= new BlockOfCode();
 		sb1.printClassDetails();
@@ -91,6 +92,17 @@ public class Mislinious {
 		de.add("8");
 		de.add("9");
 		de.add("0");
+		de.add("2");
+		Set<String>ss= new HashSet<>(de);
+		System.out.println(ss);
+		
+		Iterator<String> it=de.iterator();
+		for(;it.hasNext();) {
+			System.out.println(it.next());
+			System.out.println(it.next());
+			it.remove();
+		}
+		
 		System.out.println(de);
 		Collections.reverse(de);
 		System.out.println(de);
